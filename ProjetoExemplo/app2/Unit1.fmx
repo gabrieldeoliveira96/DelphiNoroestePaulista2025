@@ -1,0 +1,308 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'SaladApp'
+  ClientHeight = 812
+  ClientWidth = 376
+  FormFactor.Width = 375
+  FormFactor.Height = 812
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object RectangleBackground: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 376.000000000000000000
+    Size.Height = 700.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object ToolBarHeader: TToolBar
+    Size.Width = 376.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object SpeedButtonBack: TSpeedButton
+      Align = Left
+      Size.Width = 80.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowtoolbutton'
+      TextSettings.Trimming = None
+    end
+    object LabelPageTitle: TLabel
+      Align = Client
+      Size.Width = 136.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object SpeedButtonSearch: TSpeedButton
+      Align = Right
+      Position.X = 216.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'searchtoolbutton'
+      TextSettings.Trimming = None
+    end
+    object SpeedButtonGrid: TSpeedButton
+      Align = Right
+      Position.X = 296.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'moretoolbutton'
+      TextSettings.Trimming = None
+    end
+  end
+  object ScrollBoxContent: TScrollBox
+    Align = Client
+    Padding.Left = 16.000000000000000000
+    Padding.Top = 16.000000000000000000
+    Padding.Right = 16.000000000000000000
+    Padding.Bottom = 80.000000000000000000
+    Size.Width = 376.000000000000000000
+    Size.Height = 700.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 376.000000000000000000
+    Viewport.Height = 700.000000000000000000
+    object lblSpecialOffers: TLabel
+      Align = Top
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 26.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Special Offers'
+      TabOrder = 0
+    end
+    object rectOfferCard: TRectangle
+      Align = Top
+      Fill.Color = claWhite
+      Margins.Bottom = 24.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = x1A000000
+      XRadius = 16.000000000000000000
+      YRadius = 16.000000000000000000
+      object imgOffer: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Right
+        Margins.Right = 8.000000000000000000
+        Position.X = 240.000000000000000000
+        Size.Width = 96.000000000000000000
+        Size.Height = 120.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblOfferTitle: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Green salad'
+      end
+      object lblOfferSubtitle: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 40.000000000000000000
+        TextSettings.Font.Size = 14.000000000000000000
+        Text = 'Only today 10% Off'
+      end
+      object lblOfferPrice: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 70.000000000000000000
+        TextSettings.Font.Size = 16.000000000000000000
+        Text = '$2.97   $3.00'
+      end
+    end
+    object lblSeasonal: TLabel
+      Align = Top
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 208.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 26.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Seasonal Salads'
+      TabOrder = 2
+    end
+    object FlowLayoutCards: TFlowLayout
+      Align = Top
+      Position.X = 16.000000000000000000
+      Position.Y = 256.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 260.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Justify = Left
+      JustifyLastLine = Left
+      FlowDirection = LeftToRight
+      object rectSalad1: TRectangle
+        Fill.Color = claWhite
+        Size.Width = 160.000000000000000000
+        Size.Height = 200.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = x1A000000
+        XRadius = 16.000000000000000000
+        YRadius = 16.000000000000000000
+        OnClick = rectSalad1Click
+        object imgSalad1: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Align = Top
+          Size.Width = 160.000000000000000000
+          Size.Height = 140.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object lblSalad1Title: TLabel
+          Align = Top
+          Margins.Left = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 140.000000000000000000
+          Size.Width = 152.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Green salad'
+        end
+        object lblSalad1Price: TLabel
+          Align = Top
+          Margins.Left = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 157.000000000000000000
+          Size.Width = 152.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          Text = '$9.99'
+        end
+        object btnAdd1: TSpeedButton
+          Align = Bottom
+          Position.Y = 168.000000000000000000
+          Size.Width = 160.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'addtoolbutton'
+          TextSettings.Trimming = None
+        end
+      end
+      object rectSalad2: TRectangle
+        Fill.Color = claWhite
+        Position.X = 160.000000000000000000
+        Size.Width = 160.000000000000000000
+        Size.Height = 200.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = x1A000000
+        XRadius = 16.000000000000000000
+        YRadius = 16.000000000000000000
+        OnClick = rectSalad2Click
+        object imgSalad2: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Align = Top
+          Size.Width = 160.000000000000000000
+          Size.Height = 140.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object lblSalad2Title: TLabel
+          Align = Top
+          Margins.Left = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 140.000000000000000000
+          Size.Width = 152.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Green salad'
+        end
+        object lblSalad2Price: TLabel
+          Align = Top
+          Margins.Left = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 157.000000000000000000
+          Size.Width = 152.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          Text = '$8.49'
+        end
+      end
+    end
+  end
+  object BottomBar: TRectangle
+    Align = Bottom
+    Fill.Color = claWhite
+    Position.Y = 756.000000000000000000
+    Size.Width = 376.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = x1A000000
+    object SpeedButtonHome: TSpeedButton
+      Align = Left
+      Size.Width = 93.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'hometoolbutton'
+      TextSettings.Trimming = None
+    end
+    object SpeedButtonCategory: TSpeedButton
+      Align = Left
+      Position.X = 93.000000000000000000
+      Size.Width = 93.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'knifeforktoolbutton'
+      TextSettings.Trimming = None
+    end
+    object SpeedButtonFavorite: TSpeedButton
+      Align = Left
+      Position.X = 186.000000000000000000
+      Size.Width = 93.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'hearttoolbutton'
+      TextSettings.Trimming = None
+    end
+    object SpeedButtonProfile: TSpeedButton
+      Align = Client
+      Size.Width = 97.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'profiletoolbutton'
+      TextSettings.Trimming = None
+    end
+  end
+  object FAB: TCircle
+    Fill.Color = xFF4CAF50
+    Position.X = 155.000000000000000000
+    Position.Y = 680.000000000000000000
+    Size.Width = 64.000000000000000000
+    Size.Height = 64.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object PathFAB: TPath
+      Align = Contents
+      Data.Path = {
+        0400000000000000000000400000004201000000000078420000004200000000
+        0000004200000040010000000000004200007842}
+      Size.Width = 64.000000000000000000
+      Size.Height = 64.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      Stroke.Thickness = 4.000000000000000000
+    end
+  end
+end
